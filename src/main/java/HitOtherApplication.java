@@ -24,6 +24,7 @@ public class HitOtherApplication {
 					con.setRequestMethod("POST");
 					con.setRequestProperty("Accept", "application/json");
 					con.connect();
+					
 					InputStream is= con.getInputStream();
 					
 					BufferedReader bfri= new BufferedReader(new InputStreamReader(is));
