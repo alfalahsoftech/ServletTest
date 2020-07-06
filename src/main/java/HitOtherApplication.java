@@ -33,6 +33,7 @@ public class HitOtherApplication {
 					while((output =bfri.readLine())!=null) {
 						System.out.println(output);
 					}
+					System.out.println("\n\n  ");
 					con.disconnect();
 					//timer.cancel();
 				} catch (Exception e) {
