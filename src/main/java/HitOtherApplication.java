@@ -3,6 +3,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Date;
 import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -15,7 +16,8 @@ public class HitOtherApplication {
 			
 			@Override
 			public void run() {
-				System.out.println("aaaaaaaaaaa");
+				
+				System.out.println(new Date()+"Timer started for => https://alfalahtech.herokuapp.com/rest/UserService/dispStaff \n\n ");
 				try {
 					URL url = new URL("https://alfalahtech.herokuapp.com/rest/UserService/dispStaff");
 					HttpURLConnection con = (HttpURLConnection) url.openConnection();
@@ -38,7 +40,7 @@ public class HitOtherApplication {
 				
 			}
 		};
-		timer.schedule(task, 10,1000*60);
+		timer.schedule(task, 10,1000*60*20); // 1000=1 sec* 60=> 1 minute *20=> 20 minutes:  every 20 minutes
 	}
 	
 	public static void disConnect() {
