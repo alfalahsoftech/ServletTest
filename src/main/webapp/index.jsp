@@ -83,7 +83,7 @@ span.psw {
 </head>
 <body>
 
-<h2>Modal Login Form</h2>
+<h2 style="text-align: center;">Welcome to Alfalah-Softech Pvt. Ltd.</h2>
 
 <div >
   
